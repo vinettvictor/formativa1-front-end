@@ -9,7 +9,49 @@
 
     <!--Se Aplica Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+    <!--Estilos css-->
+    <style>
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+        }
+        
+        .footer {
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #968f8f;
+        }
+        
+        .all-browsers {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+        }
+        
+        .all-browsers>h1,
+        .browser {
+            margin: 10px;
+            padding: 5px;
+        }
+        
+        .browser {
+            background: white;
+        }
+        
+        .browser>h2,
+        p {
+            margin: 4px;
+            font-size: 90%;
+        }
+    </style>
 </head>
 
 <body>
@@ -71,11 +113,45 @@
 
         </div>
         <hr>
+
+        <div>
+            <article class="all-browsers">
+                <h1>Articulo</h1>
+                <article class="browser">
+                    <section>
+                        <h2>Articulo Coca cola 1</h2>
+                        <p>The Coca-Cola Company es una corporación multinacional estadounidense de bebidas con sede en Atlanta, Georgia.
+                        </p>
+                    </section>
+
+                </article>
+                <article class="browser">
+                    <section>
+                        <h2>Articulo Coca Cola 2</h2>
+                        <p>The Coca-Cola Company tiene intereses en la fabricación, venta minorista y comercialización de concentrados y jarabes para bebidas no alcohólicas.</p>
+                    </section>
+                </article>
+            </article>
+        </div>
+
+        <div class="container">
+            <h3>Elemento Aside</h3>
+            <!--Aside tag-->
+            <aside>
+                <p>Esto es un aside, la información contenida es de coca cola company</p>
+            </aside>
+            <hr>
+        </div>
     </div>
+
     <!--CDN de boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <footer>
-        2021 &copy; Coca - Cola Company
+    <footer class="footer">
+        <div>
+            2021 &copy; Coca - Cola Company Telefonos: 2 56343639 - 2 98968210
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
     </footer>
 </body>
 
