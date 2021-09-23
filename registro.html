@@ -30,6 +30,39 @@
                     alert('La direccón de correo no es válida');
                 }
             });
+
+            $('#nombre').change(function() {
+                console.log("Input cambiado " + $(this).val());
+                let nombre = $(this).val();
+                if (!isNaN(nombre)) {
+                    console.log("Ingrese solo letras");
+                    alert("Ingrese solo letras");
+                }
+                if (nombre < 3 || nombre > 20) {
+                    console.log("Nombre fuera de rango");
+                    alert("Nombre fuera de rango");
+                    $(this).val("");
+                    $(this).focus();
+                    $(this).select();
+                }
+
+            });
+
+            $('#apellido').change(function() {
+                console.log("Input cambiado " + $(this).val());
+                let apellido = $(this).val();
+                if (!isNaN(apellido)) {
+                    console.log("Ingrese solo letras");
+                    alert("Ingrese solo letras");
+                }
+                if (apellido < 3 || apellido > 20) {
+                    console.log("Apellido fuera de rango");
+                    alert("Apellido fuera de rango");
+                    $(this).val("");
+                    $(this).focus();
+                    $(this).select();
+                }
+            });
         });
     </script>
 </head>
@@ -57,11 +90,11 @@
 
             <form method="post">
                 <div class="input-group input-group-lg">
-                    <input type="text" class="form-control mb-3 mr-2 form-control-lg" placeholder="Ingrese su Nombre" name="nombre" required>
+                    <input id="nombre" type="text" class="form-control mb-3 mr-2 form-control-lg" placeholder="Ingrese su Nombre" name="nombre" required>
                 </div>
 
                 <div>
-                    <input type="text" class="form-control mb-3 ml-2 form-control-lg" placeholder="Ingrese su Apellido" name="apellido" required>
+                    <input id="apellido" type="text" class="form-control mb-3 ml-2 form-control-lg" placeholder="Ingrese su Apellido" name="apellido" required>
                 </div>
 
                 <div class="input-group input-group-lg">
