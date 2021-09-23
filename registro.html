@@ -18,14 +18,16 @@
     <link rel="StyleSheet" href="footer.css" type="text/css">
 
     <script>
+        //valida el correo media expresión regular.
         $(document).ready(function() {
-            $('#email').click(function() {
-                var email = $(this).val();
-                console.log(email);
-                var pattern = /(?:((?:[\w-]+(?:\.[\w-]+)*)@(?:(?:[\w-]+\.)*\w[\w-]{0,66})\.(?:[a-z]{2,6}(?:\.[a-z]{2})?));*)/g;
+            $('#validate').click(function() {
+                var regex = /[\w-\.]{2,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
 
-                if (!pattern.test(email)) {
-                    console.log("email es " + email);
+                if (regex.test($('#email').val().trim())) {
+                    alert('Correo validado');
+
+                } else {
+                    alert('La direccón de correo no es válida');
                 }
             });
         });
@@ -74,7 +76,7 @@
                     <input type="password" class="form-control mb-3 mr-2 form-control-lg" placeholder="Confirme su password" name="passwordConfirmation" required>
                 </div>
 
-                <button type="submit" class="btn btn-outline-danger my-4 btn-lg py-3 text-uppercase w-50">Registrarme</button>
+                <button id="validate" type="submit" class="btn btn-outline-danger my-4 btn-lg py-3 text-uppercase w-50">Registrarme</button>
 
             </form>
         </div>
