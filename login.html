@@ -13,61 +13,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!--Estilos css-->
-    <style>
-        .footer {
-            bottom: 0;
-            position: absolute;
-            width: 100%;
-            height: 60px;
-            background-color: #fc5a5a;
-        }
-        
-        .all-browsers {
-            margin: 0;
-            padding: 5px;
-            background-color: lightgray;
-        }
-        
-        .all-browsers>h1,
-        .browser {
-            margin: 10px;
-            padding: 5px;
-        }
-        
-        .browser {
-            background: white;
-        }
-        
-        .browser>h2,
-        p {
-            margin: 4px;
-            font-size: 90%;
-        }
-        
-        .container {
-            float: center;
-            width: 100%
-        }
-    </style>
+    <link rel="StyleSheet" href="principal.css" type="text/css">
+    <link rel="StyleSheet" href="footer.css" type="text/css">
 </head>
 
 <body>
     <!--NavBar navegación con boostrap-->
-    <div class="container">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./formativa01.html">
-                    <img src="img/logo/coca_cola.png" alt="coca cola" class="image-fluid" width="80px"></img>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./login.html">Iniciar Sesión</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled">Acerca de nosotros</a>
-            </li>
-        </ul>
-    </div>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./formativa01.html">
+                <img src="img/logo/coca_cola.png" alt="coca cola" class="image-fluid" width="80px"></img>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./login.html">Iniciar Sesión</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled">Acerca de nosotros</a>
+        </li>
+    </ul>
     <br>
     <div class="container">
         <br>
@@ -77,12 +41,12 @@
         <label for="" class="col-sm-2 col-form-label">Email</label>
         <input type="email" class="form-control" placeholder="nombre@ejemplo.com" required><br>
         <label for="" class="col-sm-2 col-form-label">Password</label>
-        <input type="password" class="form-control"><br>
+        <input type="password" class="form-control" required><br>
 
         <button type="button" class="btn btn-outline-danger">Ingresar</button>
         <a type="button" class="btn btn-outline-success" href="./registro.html">Registrarse</a>
 
-
+        <hr>
     </div>
     <br>
     <footer class="footer">
