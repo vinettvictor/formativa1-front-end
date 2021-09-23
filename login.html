@@ -19,7 +19,7 @@
             position: absolute;
             width: 100%;
             height: 60px;
-            background-color: #968f8f;
+            background-color: #fc5a5a;
         }
         
         .all-browsers {
@@ -45,8 +45,8 @@
         }
         
         .container {
-            float: left;
-            width: 80%
+            float: center;
+            width: 100%
         }
     </style>
 </head>
@@ -69,22 +69,31 @@
         </ul>
     </div>
     <br>
-    <div>
+    <div class="container">
         <br>
         <hr>
         <h1>Login</h1>
+
+        <label for="" class="col-sm-2 col-form-label">Email</label>
+        <input type="email" class="form-control" placeholder="nombre@ejemplo.com" required><br>
+        <label for="" class="col-sm-2 col-form-label">Password</label>
+        <input type="password" class="form-control"><br>
+
+        <button type="button" class="btn btn-outline-danger">Ingresar</button>
+        <a type="button" class="btn btn-outline-success" href="./registro.html">Registrarse</a>
+
+
     </div>
     <br>
-    <div class="container">
-        <footer class="footer">
-            <hr>
-            <div>
-                2021 &copy; Coca - Cola Company Telefonos: 2 56343639 - 2 98968210
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram"></i>
-            </div>
-        </footer>
-    </div>
+    <footer class="footer">
+        <hr>
+        <div>
+            2021 &copy; Coca - Cola Company Telefonos: 2 56343639 - 2 98968210
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 
